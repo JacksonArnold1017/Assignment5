@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Slabo+27px&display=swap');
+
+.header{
+    text-align: center;
+    color: blue;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.undertitle {
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu {
+    font-family: 'Slabo 27px', serif;
+    font-size: xx-large;
+}
+
+#menuitem{
+    color: crimson;
+    font-size: x-large;
+}
