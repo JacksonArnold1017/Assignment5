@@ -35,3 +35,6 @@ font-family: 'Slabo 27px', serif;
 fieldset{
     width: fit-content;
 }
+body{
+background-color: wheat;
+}
