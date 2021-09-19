@@ -11,14 +11,17 @@
     <h1 class="header">Burger Planet Menu</h1>
     <p class="undertitle">Welcome to Burger Planet! Where we deliver burgers all over the Planet!</p>
     <h2 class="menu">Menu:</h2>
-    <p id="menuitem">Classic Burger</p> 
-    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/5:4/w_3129,h_2503,c_limit/Smashburger-recipe-120219.jpg" alt="Girl in a jacket" style="width:200px;height:200px;">
+    <p id="menuitem">Make your Order!</p> 
+    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/5:4/w_3129,h_2503,c_limit/Smashburger-recipe-120219.jpg" alt="Burger" style="width:200px;height:200px;">
+
+
+    <img src="https://s3-assets.eastidahonews.com/wp-content/uploads/2019/10/30061728/AdobeStock_279692163_Editorial_Use_Only-860x533.jpeg"  style="width:200px;height:200px;" alt="drinks" id="soda" >
     <form action="index.html" method="GET"
     ></form>
     Number of Patties and Toppings <br>
     <select name="Number_of_patties">
         <optgroup label="How Many ?">
-            <option value="placeholder"><label for=""></label></option>
+            <option value="placeholder">None<label for="None"></label></option>
             <option value="1 Patty">1 Patty</option>
             <option value="2 Patties">2 Patties</option>
             
@@ -30,19 +33,22 @@
     
 <select name="Choose 1 Topping">
     <optgroup label="Toppings">
+        <option value="None">None</option>
         <option value="Pickles">Pickles</option>
         <option value="Onion">Onions</option>
         <option value="Fries">Fries</option>
 
-        <input type="radio" name="Cheese" value="With Cheese">
-        With Cheese<br>
-        <input type="radio" name="Cheese" value="Without Cheese" onclick="this">
-        Without Cheese<br id="without"> 
+        <input type="radio" name="Cheese" value="With Cheese" id="Cheese">
+        <label for="Cheese">With Cheese</label>
+        <input type="radio" name="Cheese" value="Without Cheese" onclick="this" id="No Cheese">
+        <label for="No Cheese">Without Cheese</label>
+        
     
     </optgroup>
 
     </select>
-<h3>Sides</h3> <p>Choose some of our famous sides!</p>
+<h3 class="menulist">Sides</h3> <p class="menusmall">Choose some of our famous sides!</p>
+
 
 <select name="Choose a Side with your order!">
     <optgroup label="Sides">
@@ -55,6 +61,47 @@
     </optgroup>
 
     </select>
+
+    <h4 class="menulist">Drinks</h4>
+    <form id="drinks" action="order.php" method="POST"></form>
+    <fieldset>
+        <legend>Choice of 2 Liter Beverage.</legend>
+        <input type="checkbox" name="Sprite" id="soda1" >
+        <label for="soda1">Sprite</label><br>
+        <input type="checkbox" name="Water" id="water" >
+        <label for="water">Water</label> <br>
+        <input type="checkbox" name="Pepsi" id="Pepsi" >
+        <label for="Pepsi" >Pepsi</label><br>
+        <input type="checkbox" name="Fanta" id="Fanta" >
+        <label for="Fanta" >Fanta</label> <br>
+</fieldset>
+
+<h5 class="menulist">Delivery Information</h5>
+<form action="index.html" method="POST" id="deliveryform">
+    <label for="name">Enter your full name:</label>
+    <input type="name" name="fullname" required>
+</form>
+
+<form action="index.html" method="POST">
+<label for="email">Please enter your email:</label>
+    <input type="email" name="email" required>
+</form>
+
+<form action="index.html" method="POST">
+    <label for="address">Please enter your address:</label>
+        <input type="address" name="address" required>
+    </form>
+
+
+    <form action="index.html" method="POST">
+        <label for="address">Please enter your Number:</label>
+            <input type="number" name="number" required>
+        </form>
+
+
+
+    
+  
 
 
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Slabo+27px&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Slabo+27px&display=swap');
 .header{
     text-align: center;
     color: blue;
@@ -22,3 +22,16 @@
     font-size: x-large;
 }
 
+.menulist {
+font-size: x-large;
+font-family: 'Slabo 27px', serif;
+}
+
+.menusmall{
+    font-size: larger;
+    color: mediumblue;
+}
+
+fieldset{
+    width: fit-content;
+}
